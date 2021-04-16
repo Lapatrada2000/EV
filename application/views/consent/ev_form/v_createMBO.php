@@ -403,7 +403,7 @@ function createAtt(){
 							<br>
 							<div class="row">
 								<div class="col-md-6">
-									<button class="btn btn-inverse">CANCELLLLLLLLLL</button>
+									<button class="btn btn-inverse">CANCEL</button>
 									<button class="btn btn-default">CLEAR</button>
 								</div>
 								<!-- col-md-6 -->
