@@ -151,10 +151,23 @@ function drawGraph(dataArr) {
             //     }
             //     context.stroke();
         }
-
+	var check = "";
+	var value_quotaPlan = 0;
+	var quota = 0;
+	
+	check = document.getElementById("quotaPlan").value;
+	for(i=1; i<=5; i++){
+		quota = document.getElementById("quota"+i).innerHTML;
+			value_quotaPlan = parseInt(check)*quota/100;
+		
+		
+		//document.getElementById("show_quotaPlan"+i).innerHTML = value_quotaPlan;
+		drawGraph(value_quotaPlan);
+	}//for
+	
         // test graph  
-        var testValues = [0.4, 2, 3.2, 2, 0.4];
-        drawGraph(testValues);
+        // var testValues = [0.4, 2, 3.2, 2, 0.4];
+        
 
 </script>
 
@@ -263,7 +276,7 @@ function drawGraph(dataArr) {
 								<text font-family="sans-serif" font-size="12px" font-weight="normal" style="font: 12px sans-serif; font-size-adjust: none; font-stretch: normal; text-anchor: end; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);" fill="#888888" stroke="none" text-anchor="end" x="32.51" y="308" font="10px &quot;Arial&quot;">
 									<tspan style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" dy="4.17">0</tspan>
 								</text>
-								
+
 								<path style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" fill="none" stroke="#aaaaaa" stroke-width="1" d="M 45.01 308.2 H 650"></path>
 								<text font-family="sans-serif" font-size="12px" font-weight="normal" style="font: 12px sans-serif; font-size-adjust: none; font-stretch: normal; text-anchor: end; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);" fill="#888888" stroke="none" text-anchor="end" x="32.51" y="248" font="10px &quot;Arial&quot;">
 									<tspan style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" dy="4.17">25</tspan>
