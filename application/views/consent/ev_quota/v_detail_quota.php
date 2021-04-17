@@ -154,17 +154,17 @@ function drawGraph(dataArr) {
 	var check = "";
 	var value_quotaPlan = 0;
 	var quota = 0;
-	
+	var arryPlanQuota= [];
 	check = document.getElementById("quotaPlan").value;
 	for(i=1; i<=5; i++){
 		quota = document.getElementById("quota"+i).innerHTML;
 			value_quotaPlan = parseInt(check)*quota/100;
 		
-		
+			arryPlanQuota=value_quotaPlan;
 		//document.getElementById("show_quotaPlan"+i).innerHTML = value_quotaPlan;
-		drawGraph(value_quotaPlan);
+			drawGraph(arryPlanQuota[i]);
 	}//for
-	
+
         // test graph  
         // var testValues = [0.4, 2, 3.2, 2, 0.4];
         
