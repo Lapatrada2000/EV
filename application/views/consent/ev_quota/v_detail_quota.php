@@ -284,7 +284,7 @@ function drawGraph(dataArr) {
 							</svg>
 							</div> -->
 						
-							<canvas id="testCanvas" width="400" height="400"></canvas> 
+							<canvas id="testCanvas" width="720" height="650"></canvas> 
 						</div>
 					</div>
 				</div>
