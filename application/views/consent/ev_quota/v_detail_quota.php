@@ -43,6 +43,23 @@ tbody:hover {
 </style>
 
 <script>
+function check_quota_plan(){
+	
+	var check = "";
+	var value_quotaPlan = 0;
+	var quota = 0;
+	
+	check = document.getElementById("quotaPlan").value;
+	for(i=1; i<=5; i++){
+		quota = document.getElementById("quota"+i).innerHTML;
+			value_quotaPlan = parseInt(check)*quota/100;
+		
+		
+		document.getElementById("show_quotaPlan"+i).innerHTML = value_quotaPlan;
+	}//for
+	
+
+}
 function drawGraph(dataArr) {
             var canvas = document.getElementById("testCanvas");
             var context = canvas.getContext("2d");
@@ -284,7 +301,7 @@ function drawGraph(dataArr) {
 							</svg>
 							</div> -->
 						
-							<canvas id="testCanvas" width="720" height="650"></canvas> 
+							<canvas id="myCanvas" width="400" height="400" ></canvas> 
 						</div>
 					</div>
 				</div>
